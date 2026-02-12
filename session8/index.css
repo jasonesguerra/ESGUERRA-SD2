@@ -1,0 +1,26 @@
+*{
+    margin: 0 !important
+;    padding: 0 !important;
+    box-sizing: border-box;
+
+}
+
+
+
+
+.heading{
+    color: rgb(88, 190, 29);
+}
+
+.heading
+{
+    font-size: 67px;
+}
+
+.text-purple{
+    color: rgb(121, 36, 121) ;
+}
+
+.bg-purple{
+    background-color: rgb(199, 121, 199);
+}
