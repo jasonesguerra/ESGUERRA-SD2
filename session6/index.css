@@ -1,0 +1,122 @@
+<<<<<<< HEAD
+/* h1 {color: rgb(243, 0, 0) !important;}
+
+/* Universal selector */
+=======
+/* h1{
+    color: green !important;
+} */
+
+/* Universal Selector */
+
+>>>>>>> 70c514955547318f24e1bc6a86af60bd95a7fa78
+*{
+    font-family: "Courier New", monospace;
+    font-size: 20px;
+}
+
+<<<<<<< HEAD
+body{
+    background-color: rgb(150, 150, 142);
+}
+/* NAVE BAR STYLING */
+top nav{
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+div {
+    float: right;
+}
+
+/* Type selector - Call teh tag*/
+
+h1 {
+    color: violet;
+=======
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(96, 146, 166);
+}
+
+/* NAV BAR */
+
+nav{
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+div{
+    float: right;
+}
+
+/* TYPE SELECTOR - CALL THE TAG */
+h1{
+    color: rgb(249, 249, 249) !important;
+>>>>>>> 70c514955547318f24e1bc6a86af60bd95a7fa78
+    text-align: center;
+    font-size: 2rem;
+}
+
+<<<<<<< HEAD
+section {
+=======
+section{
+>>>>>>> 70c514955547318f24e1bc6a86af60bd95a7fa78
+    height: 200vh;
+    text-align: center;
+}
+
+<<<<<<< HEAD
+h2 {
+    font-size: 1.5rem;
+}
+
+/* ID Selector  */
+
+#zuitt-motto
+=======
+h2{
+    font-size: 1.5rem;
+}
+
+/* ID Selector */
+
+#zuitt-motto{
+    letter-spacing: 5px;
+}
+
+h3{
+    letter-spacing: 25px;
+}
+
+/* Adjacent Selector -> +*/
+h3 + img {
+    height: 300px;
+    width: 300px;
+}
+
+ol{
+    list-style-type: none;
+    padding: 0;
+}
+
+/* CLASS SELECTOR */
+.offering-item{
+    text-transform: uppercase;
+}
+
+/* DECENDANCT SELECTOR */
+
+#bootcamp-learning-list li{
+    color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+}
+>>>>>>> 70c514955547318f24e1bc6a86af60bd95a7fa78
