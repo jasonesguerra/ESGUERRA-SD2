@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Display and Flex Properties</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body class="bg-dark text-light">
+    
+    <h1 class="text-center display-2 fw-bold">HTML Display and Flex Properties</h1>
+    <h3 class="text-center display-4 ">Display Inline vs Block vs Inline-Block</h3>
+
+    <div class="bg-secondary p-3 mt-5 container rounded-3">
+        <!--Block Property - by default p tags has a display value of block  -->
+        <p class="bg-primary p-3" >Hello</p>
+        <p class="bg-warning p-3" style="width:100px ; height:100px">Henlo</p>
+        <p>Hewwo</p>
+<hr>
+        <!--Inline Property - by default span tags has a display value of inline -->
+        <span class="bg-primary p-3" style="width:100px ; height:100px">World</span>
+        <span>Wonld</span>
+        <span>Wowwd</span>
+<hr>
+        <!--Inline-Block Property - by default div tags has a display value of block but we can change it to inline-block -->
+        <span class="d-block bg-danger p-3" style="width:100px ; height:100px">D-Block</span>
+        <span class="d-inline-block bg-warning p-3" style="width:100px ; height:100px">D-Inline-Block</span>
+        <span class="d-none bg-primary p-3" style="width:100px ; height:100px">D-None</span>
+        <span class="bg-primary p-3" style="width:100px ; height:100px">Henlo World</span>
+
+        <!-- Block is Resizable -->
+        <!-- Inline is NOT Resizable -->
+        <!-- Inline-Block is Resizable but still inline -->
+    </div>
+
+    <h3 class="text-center display-4 ">Display Flex and Flex Items</h3>
+
+    <div class="bg-secondary p-3 mt-5 container rounded-3">
+        <!-- justify-content-[start][center][end][around][between][evenly] -->
+        <div class="p-3 d-flex justify-content-center">
+            <span class="bg-primary p-3">Flex Item A</span>
+            <span class="bg-warning p-3">Flex Item B</span>
+            <span class="bg-danger p-3">Flex Item C</span>
+        </div>
+
+        <!-- flex-[row][column] -->
+        <div class="p-3 d-flex justify-content-end flex-column">
+            <span class="bg-primary p-3">Flex Item A</span>
+            <span class="bg-warning p-3">Flex Item B</span>
+            <span class="bg-danger p-3">Flex Item C</span>
+        </div>
+    </div>
+
+<!-- Note from Sir : Always read the documentations, https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
