@@ -347,10 +347,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <iframe class="floating-spotify" data-testid="embed-iframe"
-        src="https://open.spotify.com/embed/playlist/1LCy8uvzZAnE3pd3BPThEP?utm_source=generator&theme=0" width="300"
-        height="80" frameBorder="0" allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class="shadow"></iframe>
+
+    <div class="spotify-container" id="spotifyContainer">
+        <button class="spotify-toggle" id="spotifyToggle" type="button" aria-label="Minimize Spotify">
+            <i class="bi bi-dash-lg"></i>
+        </button>
+        <iframe class="floating-spotify shadow" data-testid="embed-iframe"
+            src="https://open.spotify.com/embed/playlist/1LCy8uvzZAnE3pd3BPThEP?utm_source=generator&theme=0" width="300"
+            height="80" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <script>
+        const spotifyContainer = document.getElementById('spotifyContainer');
+        const spotifyToggle = document.getElementById('spotifyToggle');
+        const spotifyIcon = spotifyToggle.querySelector('i');
+
+        spotifyToggle.addEventListener('click', () => {
+            const minimized = spotifyContainer.classList.toggle('minimized');
+            spotifyIcon.classList.toggle('bi-dash-lg', !minimized);
+            spotifyIcon.classList.toggle('bi-fullscreen', minimized);
+            spotifyToggle.setAttribute('aria-label', minimized ? 'Restore Spotify' : 'Minimize Spotify');
+        });
+    </script>
 </body>
 
 </html>
