@@ -1,0 +1,156 @@
+body {
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 70px;
+    line-height: 1.6;
+    color: #343a40;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #486a8f6b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.section {
+    animation: fadeIn 2s ease-in;
+}
+
+.section:not(#landing) {
+    padding-top: 120px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+#landing {
+    background-image: url('landing image.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#landing img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#tools img {
+    width: 50px;
+    height: 50px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+
+.btn-primary {
+    background-color: #456b94a9;
+    border-color: #16181b8c;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+    transform: translateY(-2px);
+}
+
+#projects {
+    position: relative;
+}
+
+#projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('bgimage.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+#projects .container {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+#projects .card {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #343a40;
+}
+
+.floating-spotify {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 12px;
+    z-index: 1000;
+    opacity: 0.7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .floating-spotify {
+        bottom: 10px;
+        right: 10px;
+        /* Keep the Spotify embed size consistent across devices */
+        width: 300px !important;
+        height: 80px !important;
+    }
+    .section:not(#landing) {
+        padding-top: 100px;
+    }
+}
+
+footer a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #0056b3 !important;
+    transform: scale(1.1);
+}
